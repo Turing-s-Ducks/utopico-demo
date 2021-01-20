@@ -1,4 +1,4 @@
-# final-project-medifi
+# final-project-utopico-demo
 
 ### Video Demo:  <URL HERE>
 ### Description:
