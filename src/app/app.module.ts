@@ -12,6 +12,7 @@ import { BlankComponent } from './components/dashboard/blank/blank.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { from } from 'rxjs';
+import { NotFoundComponent } from './components/share/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { from } from 'rxjs';
     SignupComponent,
     BlankComponent,
     DashboardComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

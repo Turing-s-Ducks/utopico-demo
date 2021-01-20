@@ -1,21 +1,24 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-// Componentes de Dashboard
 import { AuthGuard } from '../../guard/auth.guard';
+// Componentes de Dashboard
 import { BlankComponent } from './blank/blank.component';
 import { DashboardComponent } from './dashboard.component';
+import { NotFoundComponent } from '../share/not-found/not-found.component';
 
 const routes: Routes = [
     {
-        path: 'dashboard/:elemento', component: DashboardComponent,
+        path: 'utopic_dashboard', component: DashboardComponent,
         canActivate: [AuthGuard],
         children: [
             // Default component
-            { path: '', component: DashboardComponent, outlet: "dashboard" },
+            { path: '', component: DashboardComponent },
             // Consulta operaciones
-            { path: 'muestra_datos', component: BlankComponent, outlet: "dashboard" },
+            { path: 'muestra_datos_uno', component: BlankComponent  },
+            { path: 'muestra_datos_dos', component: DashboardComponent },
+            { path: 'muestra_datos_tres', component: BlankComponent },
             // Direccionamiento a Default Component
-            { path: '**', component: BlankComponent, pathMatch: 'full', outlet: "dashboard" }
+            { path: '**', component: NotFoundComponent, pathMatch: 'full' }
         ]
     }
 ];
