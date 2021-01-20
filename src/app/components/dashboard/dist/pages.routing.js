@@ -9,7 +9,6 @@ exports.__esModule = true;
 exports.PagesRoutingModule = void 0;
 var router_1 = require("@angular/router");
 var core_1 = require("@angular/core");
-var auth_guard_1 = require("../../guard/auth.guard");
 // Componentes de Dashboard
 var blank_component_1 = require("./blank/blank.component");
 var dashboard_component_1 = require("./dashboard.component");
@@ -17,7 +16,7 @@ var not_found_component_1 = require("../share/not-found/not-found.component");
 var routes = [
     {
         path: 'utopic_dashboard', component: dashboard_component_1.DashboardComponent,
-        canActivate: [auth_guard_1.AuthGuard],
+        // canActivate: [AuthGuard],
         children: [
             // Default component
             { path: '', component: dashboard_component_1.DashboardComponent },

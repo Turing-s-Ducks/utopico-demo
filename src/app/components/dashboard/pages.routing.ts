@@ -9,7 +9,7 @@ import { NotFoundComponent } from '../share/not-found/not-found.component';
 const routes: Routes = [
     {
         path: 'utopic_dashboard', component: DashboardComponent,
-        canActivate: [AuthGuard],
+        // canActivate: [AuthGuard],
         children: [
             // Default component
             { path: '', component: DashboardComponent },

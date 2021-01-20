@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http'
 
-import { LoginComponent } from './components/login/login.component';
-import { SignupComponent } from './components/signup/signup.component';
+
+import { LoginComponent } from './components/share/login/login.component';
+import { SignupComponent } from './components/share/signup/signup.component';
+
 import { BlankComponent } from './components/dashboard/blank/blank.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
